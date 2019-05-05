@@ -1,0 +1,122 @@
+.field {
+  display: flex;
+}
+
+.field-control {
+  position: relative;
+  margin-bottom: 10px;
+  height: 60px;
+}
+
+.field-control-select-box {
+  display: flex;
+  margin: 0 0 10px 0;
+}
+
+.field-label {
+  display: block;
+  width: 70px;
+  margin-right: 10px;
+  text-align: right;
+  color: #666;
+}
+
+.field-long-label {
+  display: block;
+  margin-right: 10px;
+  text-align: right;
+  color: #666;
+}
+
+.field-active {
+  .custom-text-field {
+    background: #f2dc6d;
+  }
+}
+
+.field-item {
+  display: flex;
+}
+
+.friut-item {
+  position: relative;
+  margin: 10px 0;
+}
+
+.custom-checkbox-field {
+  margin: 6px 10px 0 60px;
+}
+
+.custom-text-field {
+  height: 25px;
+  padding: 5px 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.error-message {
+  margin-top: 3px;
+  margin-left: 80px;
+  color: red;
+  font-size: 14px;
+}
+
+.hint {
+  white-space: nowrap;
+}
+
+.button-group {
+  margin-top: 15px;
+}
+
+.button {
+  color: #525252;
+  border: 1px solid #aaa;
+  background: #eee;
+  border-radius: 5px;
+  min-width: 60px;
+  outline: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.button-submit {
+  @extend .button;
+  background: #f29100;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.01);
+}
+
+.button-remove {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  padding: 5px 12px 15px 5px;
+  cursor: pointer;
+  line-height: 10px;
+  text-align: center;
+  background: #eee;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.button-remove-fruit {
+  @extend .button;
+  position: absolute;
+  min-width: 15px;
+  top: 0;
+  left: 250px;
+  border-radius: 10px;
+}
